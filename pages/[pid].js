@@ -17,7 +17,7 @@ function ProductDetailPage(props) {
 export async function getStaticProps(context) {
   const { params } = context;
 
-  const productId = params.id;
+  const productId = params.pid;
 
   const filePath = path.join(process.cwd(), "data", "dummy-backend.json");
   const jsonData = await fs.readFile(filePath);
